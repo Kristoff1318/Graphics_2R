@@ -4,6 +4,21 @@ from matrix import *
 
 screen = new_screen()
 
+# TESTING ROUTINES
+m2 = [[],[],[],[]]
+print('Testing add edge. Adding (1, 2, 3), (4, 5, 6) m2 = ')
+add_edge(m2, 1, 2, 3, 4, 5, 6)
+print_matrix(m2)
+
+m1 = new_matrix()
+print('\nTesting ident. m1 = ')
+ident(m1)
+print_matrix(m1)
+
+print('\nTesting matrix mult. m1 * m2 = ')
+print_matrix( matrix_mult(m1, m2) )
+
+# CREATING IMAGE
 color = [ 150, 0, 150 ]
 matrix1 = new_matrix()
 for x in range( XRES ):
